@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af8244d7-0078-42f4-b9b0-c1711a283525" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/banco/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/banco/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovelImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovelImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BancoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DocumentUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DocumentUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2LBOYM7IqXeLD49ihM6IDtvrDJq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,7 +47,14 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBemEElaMesmaComoSocia">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="project_interview_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BancoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_interview_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,6 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBemEElaMesmaComoSocia" />
         <item itemvalue="JUnit.BancoTest" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresa" />
@@ -114,5 +125,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Application.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

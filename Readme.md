@@ -1,0 +1,1 @@
+Rode os testes unitários para testar a aplicação
