@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 import dominio.banco.Banco;
 import dominio.bemImovel.BemImovelImp;
 import dominio.estruturaSocietaria.EstruturaSocietaria;
@@ -17,17 +19,17 @@ public class BancoTest {
         var socio1 = new PessoaFisicaImp();
         var socio2 = new PessoaJuridicaImp();
 
-        socio1.addBem(new BemImovelImp(10.00));
-        socio1.addBem(new BemImovelImp(10.00));
-        socio2.addBem(new BemImovelImp(10.00));
-        socio2.addBem(new BemImovelImp(10.00));
+        socio1.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio1.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio2.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio2.addBem(new BemImovelImp(new BigDecimal("10.00")));
 
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
 
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(40.00, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).doubleValue(),0);
+        Assert.assertEquals(new BigDecimal("40.00"), Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()));
     }
 
     @Test
@@ -38,18 +40,18 @@ public class BancoTest {
         var socio1 = new PessoaFisicaImp();
         var socio2 = new PessoaJuridicaImp();
 
-        socio1.addBem(new BemImovelImp(10.00));
-        socio1.addBem(new BemImovelImp(10.00));
-        socio2.addBem(new BemImovelImp(10.00));
-        socio2.addBem(new BemImovelImp(10.00));
+        socio1.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio1.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio2.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio2.addBem(new BemImovelImp(new BigDecimal("10.00")));
 
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
 
-        empresa.addBem(new BemImovelImp(10.00));
+        empresa.addBem(new BemImovelImp(new BigDecimal("10.00")));
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(50.00, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).doubleValue(),0);
+        Assert.assertEquals(new BigDecimal("50.00"), Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()));
     }
 
     @Test
@@ -60,11 +62,11 @@ public class BancoTest {
         var socio1 = new PessoaFisicaImp();
         var socio2 = new PessoaJuridicaImp();
 
-        empresa.addBem(new BemImovelImp(10.00));
-        socio1.addBem(new BemImovelImp(10.00));
-        socio1.addBem(new BemImovelImp(10.00));
-        socio2.addBem(new BemImovelImp(10.00));
-        socio2.addBem(new BemImovelImp(10.00));
+        empresa.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio1.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio1.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio2.addBem(new BemImovelImp(new BigDecimal("10.00")));
+        socio2.addBem(new BemImovelImp(new BigDecimal("10.00")));
 
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
@@ -72,6 +74,6 @@ public class BancoTest {
 
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(50.00, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).doubleValue(),0);
+        Assert.assertEquals(new BigDecimal("50.00"), Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()));
     }
 }

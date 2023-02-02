@@ -1,14 +1,16 @@
 package dominio.bemImovel;
 
+import java.math.BigDecimal;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter @Setter @NoArgsConstructor
 public class BemImovelImp implements BemImovel {
-    Double valor;
+    BigDecimal valor;
 
-    public BemImovelImp(Double valor){
+    public BemImovelImp(BigDecimal valor){
         this.valor = valor;
     }
 }

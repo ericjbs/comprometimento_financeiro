@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/banco/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/banco/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovelImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovelImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/pessoa/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/pessoa/PessoaFisica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BancoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BancoTest">
+  <component name="RunManager" selected="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBemEElaMesmaComoSocia">
     <configuration name="BancoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_interview_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,9 +86,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBemEElaMesmaComoSocia" />
         <item itemvalue="JUnit.BancoTest" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresa" />
-        <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBemEElaMesmaComoSocia" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBem" />
       </list>
     </recent_temporary>

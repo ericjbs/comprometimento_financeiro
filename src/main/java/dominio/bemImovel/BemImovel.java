@@ -1,5 +1,7 @@
 package dominio.bemImovel;
 
+import java.math.BigDecimal;
+
 public interface BemImovel {
-    public Double getValor();
+    public BigDecimal getValor();
 }
