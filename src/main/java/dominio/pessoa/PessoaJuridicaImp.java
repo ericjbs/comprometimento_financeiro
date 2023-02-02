@@ -1,5 +1,6 @@
 package dominio.pessoa;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import dominio.bemImovel.BemImovel;
@@ -8,10 +9,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter @NoArgsConstructor
+@Getter @Setter
 public class PessoaJuridicaImp implements PessoaJuridica{
     List<BemImovel> bens;
     EstruturaSocietaria estruturaSocietaria;
+
+    public PessoaJuridicaImp(){
+        this.bens = new ArrayList<>();
+    }
 
     @Override
     public void addBem(BemImovel bem) {

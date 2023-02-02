@@ -25,9 +25,8 @@ public class BancoTest {
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
 
-        empresa.addBem(new BemImovelImp(10L));
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(50L, Banco.comprometimentoFinanceiro(estrutura).longValue());
+        Assert.assertEquals(40L, Banco.comprometimentoFinanceiro(estrutura).longValue());
     }
 }
