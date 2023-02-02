@@ -8,7 +8,9 @@ import dominio.estruturaSocietaria.EstruturaSocietaria;
 
 public interface Banco {
     static Long comprometimentoFinanceiro(EstruturaSocietaria estrutura){
-        return estrutura.getSocios().stream().flatMap(s -> s.getBens().stream())
-            .map(b -> b.getValor()).reduce(0L, Long::sum);
+        return estrutura.getSocios().stream()
+            .flatMap(s -> s.getBens().stream())
+            .map(b -> b.getValor())
+            .reduce(0L, Long::sum);
     }
 }
