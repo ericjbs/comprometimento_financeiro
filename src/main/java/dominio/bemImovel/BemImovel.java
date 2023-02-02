@@ -1,5 +1,5 @@
 package dominio.bemImovel;
 
 public interface BemImovel {
-    public Long getValor();
+    public Double getValor();
 }

@@ -6,9 +6,9 @@ import lombok.Setter;
 
 @Getter @Setter @NoArgsConstructor
 public class BemImovelImp implements BemImovel {
-    Long valor;
+    Double valor;
 
-    public BemImovelImp(Long valor){
+    public BemImovelImp(Double valor){
         this.valor = valor;
     }
 }

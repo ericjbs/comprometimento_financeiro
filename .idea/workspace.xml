@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="af8244d7-0078-42f4-b9b0-c1711a283525" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/pessoa/PessoaJuridicaImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/pessoa/PessoaJuridicaImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/banco/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/banco/Banco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovelImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/bemImovel/BemImovelImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/pessoa/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/pessoa/PessoaFisica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BancoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,16 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresa">
+  <component name="RunManager" selected="JUnit.BancoTest">
+    <configuration name="BancoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_interview_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BancoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_interview_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BancoTest" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresa" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBemEElaMesmaComoSocia" />
         <item itemvalue="JUnit.BancoTest.deveRetornarOTotalDeBensImoveisDeUmaEmpresaIncluindoSeuProprioBem" />

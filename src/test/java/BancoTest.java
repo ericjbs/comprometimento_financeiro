@@ -17,17 +17,17 @@ public class BancoTest {
         var socio1 = new PessoaFisicaImp();
         var socio2 = new PessoaJuridicaImp();
 
-        socio1.addBem(new BemImovelImp(10L));
-        socio1.addBem(new BemImovelImp(10L));
-        socio2.addBem(new BemImovelImp(10L));
-        socio2.addBem(new BemImovelImp(10L));
+        socio1.addBem(new BemImovelImp(10.00));
+        socio1.addBem(new BemImovelImp(10.00));
+        socio2.addBem(new BemImovelImp(10.00));
+        socio2.addBem(new BemImovelImp(10.00));
 
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
 
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(40L, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).longValue());
+        Assert.assertEquals(40.00, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).doubleValue(),0);
     }
 
     @Test
@@ -38,18 +38,18 @@ public class BancoTest {
         var socio1 = new PessoaFisicaImp();
         var socio2 = new PessoaJuridicaImp();
 
-        socio1.addBem(new BemImovelImp(10L));
-        socio1.addBem(new BemImovelImp(10L));
-        socio2.addBem(new BemImovelImp(10L));
-        socio2.addBem(new BemImovelImp(10L));
+        socio1.addBem(new BemImovelImp(10.00));
+        socio1.addBem(new BemImovelImp(10.00));
+        socio2.addBem(new BemImovelImp(10.00));
+        socio2.addBem(new BemImovelImp(10.00));
 
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
 
-        empresa.addBem(new BemImovelImp(10L));
+        empresa.addBem(new BemImovelImp(10.00));
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(50L, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).longValue());
+        Assert.assertEquals(50.00, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).doubleValue(),0);
     }
 
     @Test
@@ -60,11 +60,11 @@ public class BancoTest {
         var socio1 = new PessoaFisicaImp();
         var socio2 = new PessoaJuridicaImp();
 
-        empresa.addBem(new BemImovelImp(10L));
-        socio1.addBem(new BemImovelImp(10L));
-        socio1.addBem(new BemImovelImp(10L));
-        socio2.addBem(new BemImovelImp(10L));
-        socio2.addBem(new BemImovelImp(10L));
+        empresa.addBem(new BemImovelImp(10.00));
+        socio1.addBem(new BemImovelImp(10.00));
+        socio1.addBem(new BemImovelImp(10.00));
+        socio2.addBem(new BemImovelImp(10.00));
+        socio2.addBem(new BemImovelImp(10.00));
 
         estrutura.addSocio(socio1);
         estrutura.addSocio(socio2);
@@ -72,6 +72,6 @@ public class BancoTest {
 
         empresa.setEstruturaSocietaria(estrutura);
 
-        Assert.assertEquals(50L, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).longValue());
+        Assert.assertEquals(50.00, Banco.comprometimentoFinanceiro(empresa.getEstruturaSocietaria()).doubleValue(),0);
     }
 }
