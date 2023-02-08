@@ -1,5 +1,6 @@
 package dominio.pessoa;
 
-import dominio.bemImovel.BemImovel;
-
-public interface PessoaFisica extends Pessoa {}
+public interface PessoaFisica extends Pessoa {
+    String getNome();
+    String getCPF();
+}

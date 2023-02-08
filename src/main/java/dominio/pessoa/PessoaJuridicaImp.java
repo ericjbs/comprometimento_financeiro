@@ -1,28 +1,26 @@
 package dominio.pessoa;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import dominio.bemImovel.BemImovel;
 import dominio.estruturaSocietaria.EstruturaSocietaria;
-import dominio.estruturaSocietaria.EstruturaSocietariaImp;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter @Setter
-public class PessoaJuridicaImp extends DireitoDeBens implements PessoaJuridica{
+@Getter
+@Setter
+public class PessoaJuridicaImp extends DireitoDeBens implements PessoaJuridica {
     EstruturaSocietaria estruturaSocietaria;
+    String razaoSocial;
+    String CNPJ;
 
-    public EstruturaSocietaria getEstruturaSocietaria(){
-        if(estruturaSocietaria.getSocios().contains(this)) {
-            return estruturaSocietaria;
-        } else {
-            var novaEstrutura = new EstruturaSocietariaImp();
-            var novosSocios = new ArrayList<Pessoa>();
-            novosSocios.addAll(estruturaSocietaria.getSocios());
-            novosSocios.add(this);
-            novaEstrutura.setSocios(novosSocios);
-            return novaEstrutura;
-        }
+    public PessoaJuridicaImp(EstruturaSocietaria estrutura) {
+        this.estruturaSocietaria = estrutura;
+    }
+
+    public EstruturaSocietaria getEstruturaSocietaria() {
+        return estruturaSocietaria;
+    }
+
+    @Override
+    public void addSocio(Pessoa pessoa) {
+        estruturaSocietaria.addSocio(pessoa);
     }
 }
