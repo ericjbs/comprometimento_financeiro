@@ -9,10 +9,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public abstract class DireitoDeBens {
+public abstract class Bens {
     private List<BemImovel> bens;
 
-    public DireitoDeBens() { this.bens = new ArrayList<>(); }
+    public Bens() {
+        this.bens = new ArrayList<>();
+    }
 
     public void addBem(BemImovel bem) {
         bens.add(bem);

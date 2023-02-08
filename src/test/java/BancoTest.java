@@ -103,22 +103,22 @@ public class BancoTest {
     }
 
     @Test
-    public void deveRetornarOValorCorretoParaOCasoDaEmpresaA() {
+    public void compromissoFinanceiro_EmpresaA_ValorCorreto() {
         Assert.assertEquals(new BigDecimal("140.00"), banco.comprometimentoFinanceiro(empresaA.getEstruturaSocietaria()));
     }
 
     @Test
-    public void deveRetornarOValorCorretoParaOCasoDaEmpresaB() {
+    public void compromissoFinanceiro_EmpresaB_ValorCorreto() {
         Assert.assertEquals(new BigDecimal("140.00"),  banco.comprometimentoFinanceiro(empresaB.getEstruturaSocietaria()));
     }
 
     @Test
-    public void deveRetornarOValorCorretoParaOCasoDaEmpresaC() {
+    public void compromissoFinanceiro_EmpresaC_ValorCorreto() {
         Assert.assertEquals(new BigDecimal("140.00"),  banco.comprometimentoFinanceiro(empresaC.getEstruturaSocietaria()));
     }
 
     @Test
-    public void deveRetornarOValorCorretoParaOCasoDaEmpresaD() {
+    public void compromissoFinanceiro_EmpresaD_ValorCorreto() {
         Assert.assertEquals(new BigDecimal("140.00"),  banco.comprometimentoFinanceiro(empresaD.getEstruturaSocietaria()));
     }
 }

@@ -12,7 +12,6 @@ import dominio.pessoa.PessoaJuridica;
 public class BancoImp implements Banco {
     @Override
     public BigDecimal comprometimentoFinanceiro(EstruturaSocietaria estrutura) {
-
         ComprometimentoFinanceiro comprometimento = new ComprometimentoFinanceiro();
         comprometimento.pessoasConsideradas = new ArrayList<>();
         comprometimento.valor = (BigDecimal.ZERO);
@@ -26,19 +25,20 @@ public class BancoImp implements Banco {
         EstruturaSocietaria estrutura) {
 
         for (int i = 0; i < estrutura.getSocios().size(); i++) {
-            var pessoa = estrutura.getSocios().get(i);
+            var socio = estrutura.getSocios().get(i);
 
-            if (comprometimento.pessoasConsideradas.contains(pessoa)) continue;
-            comprometimento.pessoasConsideradas.add(pessoa);
+            if (comprometimento.pessoasConsideradas.contains(socio)) continue;
+
+            comprometimento.pessoasConsideradas.add(socio);
 
             // Se for uma pessoa juridica, percorre a estrutura societaria desse sócio, recursivamente, e acresce o valor do comprometimento
-            if (pessoa instanceof PessoaJuridica) {
+            if (socio instanceof PessoaJuridica) {
                 comprometimento.valor = processaComprometimentoFinanceiro(comprometimento,
-                        ((PessoaJuridica) pessoa).getEstruturaSocietaria()).valor
-                    .add(pessoa.getBens().stream().map(BemImovel::getValor).reduce(BigDecimal.ZERO, BigDecimal::add));
+                        ((PessoaJuridica) socio).getEstruturaSocietaria()).valor
+                    .add(socio.getBens().stream().map(BemImovel::getValor).reduce(BigDecimal.ZERO, BigDecimal::add));
             } else {
                 // Se for pessoa física, não há estrutura societária, portanto não há recursividade
-                comprometimento.valor = comprometimento.valor.add(pessoa.getBens().stream()
+                comprometimento.valor = comprometimento.valor.add(socio.getBens().stream()
                         .map(BemImovel::getValor).reduce(BigDecimal.ZERO, BigDecimal::add));
             }
         }
@@ -46,7 +46,7 @@ public class BancoImp implements Banco {
         return comprometimento;
     }
 
-    private class ComprometimentoFinanceiro {
+    private static class ComprometimentoFinanceiro {
         private BigDecimal valor;
         private List<Pessoa> pessoasConsideradas;
     }

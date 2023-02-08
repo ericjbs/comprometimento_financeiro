@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PessoaFisicaImp extends DireitoDeBens implements PessoaFisica {
+public class PessoaFisicaImp extends Bens implements PessoaFisica {
     String nome;
     String CPF;
 }
